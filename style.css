@@ -13,7 +13,7 @@ body{
 .main-content{
     display: grid;
     grid-template-columns: 300px 700px;
-    background-color: #8FEBD5;
+    /* background-color: #8FEBD5; */
     min-height: 1000px;
     width: 90%;
     /* #8FEBD5 */
@@ -21,7 +21,7 @@ body{
 
 .left-section{
     background-color: #2B2741;
-    grid-column: 1/2;
+    grid-column: span 1;
     color: white;
     
 }
@@ -81,7 +81,8 @@ a {
 }
 .right-section{
  background-color: #E7F7F4;
- grid-column: 2/3;  
+  
+ grid-column: span 1/span 2 ;  
 }
 .right-main-content{
     padding: 2rem 3rem;
@@ -104,7 +105,7 @@ min-height: 1000px;
     .main-content{
         grid-template-columns: 300px 700px;
         min-height: 1000px;
-    width: 90%;
+        width: 90%;
         }
 
 }
